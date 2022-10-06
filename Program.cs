@@ -1,21 +1,35 @@
-﻿int day;
-Console.WriteLine("Please enter a number between 1 and 7");
+﻿int grade1, grade2, grade3, grade4, grade5, grade6;
+int average;
+
 try
 {
-    day = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter Grade1");
+grade1=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter Grade2");
+grade2=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter Grade3");
+grade3=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter Grade4");
+grade4=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter Grade5");
+grade5=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter Grade6");
+grade6=Convert.ToInt32(Console.ReadLine());
 
-    switch (day)
+average = (grade1+grade2+grade3+grade4+grade5+grade6)/6;
+
+    switch (average)
     {
-        case 1:
-            Console.WriteLine("Monday");
+        case >=70:
+            Console.WriteLine("1st");
             break;
 
-        case 2:
-            Console.WriteLine("Tuesday");
+        case >=60:
+            Console.WriteLine("2:1");
             break;
 
         default:
-            Console.WriteLine("I said......... 1- 7");
+            Console.WriteLine("Less than a 2:1");
             break;
 
     }
